@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 19.52px;
+  color: hsl(319, 89%, 7%);
+}
+
+h1 {
+  font-size: 26.016px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(319, 89%, 7%);
+}
+
+li {
+  list-style: none;
+}
+
+.section {
+  padding: 50px 80px;
+  background: linear-gradient(320deg, hsl(319, 90%, 16%), hsl(319, 93%, 33%));
+  height: 100%;
+}
+
+.container {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 6px 6px 6px hsla(322, 52%, 4%, 0.24);
+}
+
+.main-content {
+  background-color: white;
+  padding: 50px 80px;
+  border-radius: 6px;
+}
+
+.theme {
+  display: flex;
+  justify-content: right;
+}
+
+button {
+  background: linear-gradient(320deg, hsl(319, 90%, 16%), hsl(319, 93%, 33%));
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 0px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100px;
+  font-family: var(--font);
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+button:hover {
+  background: linear-gradient(320deg, hsl(319, 89%, 25%), hsl(319, 98%, 52%));
+}
+
+header img {
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px hsla(0, 0%, 0%, 0.25);
+}
+
+header p {
+  font-size: 16.26px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header .text {
+  /* margin-top: 21.82px; */
+  margin-left: 16px;
+}
+
+header .social-midia {
+  margin-top: 8px;
+}
+
+header .social-midia a {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.content {
+  background: linear-gradient(320deg, hsl(320, 97%, 72%), hsl(319, 100%, 93%));
+  border-radius: 6px;
+  margin-top: 40px;
+  padding: 50px 80px;
+  text-align: center;
+  line-height: 42.19px;
+}
+
+.content h1 {
+  line-height: 56.25px;
+  font-size: 22.764px;
+}
+
+.dark .section {
+  background: linear-gradient(320deg, hsl(320, 29%, 63%), hsl(320, 7%, 84%));
+  color: white;
+}
+
+.dark .main-content {
+  background-color: rgb(42, 42, 44);
+  border-radius: 6px;
+}
+
+.dark .container {
+  background-color: rgb(42, 42, 44);
+}
+
+.dark .content .projects {
+  color: hsl(319, 89%, 7%);
+}
+.dark .icon-github1 {
+  color: white;
+}
+@media (max-width: 998px) {
+  .section {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 822px) {
+  .section {
+    padding: 60px 40px;
+  }
+
+  body {
+    font-size: 17px;
+  }
+
+  .main-content {
+    padding: 60px 40px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .main-content h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 40px 30px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .main-content {
+    padding: 40px 30px;
+  }
+
+  img {
+    width: 115px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 7.5px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .main-content h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 475px) {
+  .section {
+    padding: 30px 20px;
+  }
+
+  .main-content {
+    padding: 30px 20px;
+  }
+
+  .content {
+    padding: 15px 10px;
+  }
+
+  button {
+    font-size: 12px;
+    width: 50px;
+    padding: 4px 0px;
+  }
+}
